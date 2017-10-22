@@ -7,8 +7,5 @@ def key_for_min_value(hash)
       min = x
     end
   end
-  if min == ""
-    return nil
-  end
   return min
 end
