@@ -1,5 +1,5 @@
 def key_for_min_value(hash)
-  endmin = ""
+  min = ""
   minval = 10000000000000000000
   hash.collect do |x,y|
     if y < minval
@@ -7,5 +7,9 @@ def key_for_min_value(hash)
       min = x
     end
   end
-  return min
+  if min == ""
+    return nil
+  else
+    return min
+  end
 end
